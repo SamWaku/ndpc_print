@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ndpc *.css
+recursive-include ndpc *.csv
+recursive-include ndpc *.html
+recursive-include ndpc *.ico
+recursive-include ndpc *.js
+recursive-include ndpc *.json
+recursive-include ndpc *.md
+recursive-include ndpc *.png
+recursive-include ndpc *.py
+recursive-include ndpc *.svg
+recursive-include ndpc *.txt
+recursive-exclude ndpc *.pyc
