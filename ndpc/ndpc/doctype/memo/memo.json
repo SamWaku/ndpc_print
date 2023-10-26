@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "MEM.####",
+ "creation": "2023-10-23 17:25:59.162659",
+ "default_view": "List",
+ "description": "User.first_name",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "memo_name",
+  "body",
+  "sender",
+  "sender_role"
+ ],
+ "fields": [
+  {
+   "fieldname": "memo_name",
+   "fieldtype": "Data",
+   "label": "memo name"
+  },
+  {
+   "fieldname": "body",
+   "fieldtype": "Text Editor",
+   "label": "body"
+  },
+  {
+   "fieldname": "sender",
+   "fieldtype": "Link",
+   "label": "Sender",
+   "options": "User"
+  },
+  {
+   "fieldname": "sender_role",
+   "fieldtype": "Data",
+   "label": "Sender Role"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-24 17:00:29.196442",
+ "modified_by": "Administrator",
+ "module": "Ndpc",
+ "name": "Memo",
+ "name_case": "UPPER CASE",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_views": 1
+}
