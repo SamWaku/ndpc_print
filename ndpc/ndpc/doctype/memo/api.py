@@ -1,5 +1,7 @@
 import frappe
 
+
+
 @frappe.whitelist()
 def user_role(email):
      # Get the current user
@@ -29,3 +31,6 @@ def user_role(email):
     # return user_roles
 
     # # return frappe.db.sql(f"""SELECT role_profile_name FROM `tabUser` WHERE email='{email}';""")
+
+
+
