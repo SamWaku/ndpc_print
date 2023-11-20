@@ -8,22 +8,23 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "memo_name",
+  "title",
   "body",
   "sender",
   "sender_role",
-  "amended_from"
+  "attachement",
+  "receiver",
+  "reciever_role",
+  "action",
+  "action_date_and_time",
+  "amended_from",
+  "custom_script_toggle_body_state"
  ],
  "fields": [
   {
-   "fieldname": "memo_name",
-   "fieldtype": "Data",
-   "label": "memo name"
-  },
-  {
    "fieldname": "body",
    "fieldtype": "Text Editor",
-   "label": "body"
+   "label": "Body"
   },
   {
    "fieldname": "sender",
@@ -37,6 +38,37 @@
    "label": "Sender Role"
   },
   {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "attachement",
+   "fieldtype": "Attach",
+   "label": "Attachement"
+  },
+  {
+   "fieldname": "receiver",
+   "fieldtype": "Link",
+   "label": "Receiver",
+   "options": "User"
+  },
+  {
+   "fieldname": "reciever_role",
+   "fieldtype": "Data",
+   "label": "Reciever Role"
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Long Text",
+   "label": "Action"
+  },
+  {
+   "fieldname": "action_date_and_time",
+   "fieldtype": "Datetime",
+   "label": "Action Date and Time"
+  },
+  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -44,12 +76,17 @@
    "options": "NCMemo",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "custom_script_toggle_body_state",
+   "fieldtype": "Data",
+   "label": "Toggle Body State"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-10-25 13:30:20.300018",
+ "modified": "2023-11-19 18:57:13.748691",
  "modified_by": "Administrator",
  "module": "Ndpc",
  "name": "NCMemo",
@@ -66,6 +103,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
    "share": 1,
    "write": 1
   }
