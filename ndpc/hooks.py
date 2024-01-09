@@ -218,3 +218,8 @@ app_license = "MIT"
 # auth_hooks = [
 #	"ndpc.auth.validate"
 # ]
+
+fixtures = [
+    "Workflow",
+    "Print Format"
+]
