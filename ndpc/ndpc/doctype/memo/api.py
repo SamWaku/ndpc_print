@@ -2,6 +2,8 @@ import frappe
 from frappe import as_json
 import json
 
+
+
 @frappe.whitelist()
 def user_role(email):
      # Get the current user
